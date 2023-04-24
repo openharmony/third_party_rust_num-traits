@@ -8,8 +8,18 @@
 Rust中通用数学的数字特性。
 
 ## 用法
+### 使用Openharmony编译框架
+在你的"BUILD.gn"中使用deps字段添加对num-traits crate的依赖，例如：
 
-在你的 "Cargo.toml "中添加这个：
+```BUILD.gn
+ohos_rust_shared_library("foo") {
+  source = [ "src/lib.rs" ]
+  deps = [ "//third_party/rust/crates/num-traits:lib" ]
+}
+```
+
+### 使用Cargo
+在你的 "Cargo.toml "中添加：
 
 ``toml
 [dependencies]
@@ -53,11 +63,3 @@ default-features = false
 
  * [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
  * [MIT许可证](http://opensource.org/licenses/MIT)
-
-由你选择。
-
-### 贡献
-
-除非你明确说明，任何有意提交的贡献
-如Apache-2.0许可中所定义的那样，任何由你故意提交并纳入作品的贡献，都应按上述规定获得双重许可。
-如上所述的双重许可，没有任何附加的条款或条件。
