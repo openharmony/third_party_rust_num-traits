@@ -5,9 +5,10 @@
 [![minimum rustc 1.8](https://img.shields.io/badge/rustc-1.8+-red.svg)](https://rust-lang.github.io/rfcs/2495-min-rust-version.html)
 [![build status](https://github.com/rust-num/num-traits/workflows/master/badge.svg)](https://github.com/rust-num/num-traits/actions)
 
-Rust中通用数学的数字特性。
+## 引入背景
+Num-traits在rust中提供了数字计算等数学方法的三方库，包括Rust中通用数学的数字特性。
 
-## 用法
+## 使用指导
 ### 使用Openharmony编译框架
 在你的"BUILD.gn"中使用deps字段添加对num-traits crate的依赖，例如：
 
@@ -63,3 +64,9 @@ default-features = false
 
  * [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
  * [MIT许可证](http://opensource.org/licenses/MIT)
+
+## 开发者贡献
+
+在使用该工具的过程中有任何问题欢迎开发者在社区issue中反馈。
+
+<br>
